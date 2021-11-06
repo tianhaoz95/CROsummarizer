@@ -22,5 +22,6 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
 
 # Download Flutter SDK
-RUN git clone https://github.com/flutter/flutter.git
+WORKDIR /home/vscode
+RUN git clone https://github.com/flutter/flutter.git -b stable
 ENV PATH "$PATH:/home/vscode/flutter/bin"
