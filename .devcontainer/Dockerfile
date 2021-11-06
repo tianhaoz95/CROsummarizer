@@ -23,4 +23,4 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 
 # Download Flutter SDK
 RUN git clone https://github.com/flutter/flutter.git
-ENV PATH "$PATH:/home/developer/flutter/bin"
+ENV PATH "$PATH:/home/vscode/flutter/bin"
